@@ -1,0 +1,61 @@
+\documentclass[10pt]{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{amsmath,amssymb,siunitx,bm,multirow, booktabs}
+
+\title{VLE Data}
+\author{Group M1 \\ CHEG 345 Prelab}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}
+    \begin{table}[h]
+    \centering
+    \caption{Experimental Infinite Dilution Activity Coefficients at 56\,\textdegree C}
+    \label{tab:activity_coefficients}
+    \begin{tabular}{llcc}
+    \toprule
+    \textbf{System} & \textbf{Component} & $\boldsymbol{\gamma^\infty}_\text{aspen}$ & $\boldsymbol{\gamma^\infty}_\text{experiment}$ \\
+    \midrule
+    \multirow{2}{*}{EtOH--Methyl Acetate}   & Ethanol          & 2.728 & 3.108 \\
+                                            & Methyl Acetate & 3.153 & 3.096 \\
+    \midrule
+    \multirow{2}{*}{Methyl Acetate--Ethyl Acetate} & Methyl Acetate & 1.230 & 1.196 \\
+                                                & Ethyl Acetate  & 1.110 & 1.003 \\
+    \midrule
+    \multirow{2}{*}{Ethyl Acetate--EtOH}    & Ethyl Acetate  & 2.625 & 3.896 \\
+                                            & Ethanol           & 2.489 & 2.250 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \begin{table}[h]
+    \centering
+    \caption{Model Parameters from Experimental Infinite Dilution Activity Coefficients at 56\,\textdegree C}
+    \begin{tabular}{llcccccccc}
+    \toprule
+    & \multicolumn{2}{c}{\textbf{Margules}} & \multicolumn{2}{c}{\textbf{van Laar}} & \multicolumn{2}{c}{\textbf{Wilson}} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+    \textbf{System} & \textbf{$a_{12}$} & \textbf{$a_{21}$} & \textbf{$\alpha$} & \textbf{$\beta$} & \textbf{$\Lambda_{12}$} & \textbf{$\Lambda_{21}$} & \textbf{$\Lambda_{12}$} & \textbf{$\Lambda_{21}$} \\
+    \midrule
+    EtOH -- Methyl Acetate         & 3.108 & 3.096 & 1.1340 & 1.1301 & 1.1340 & 1.1301 & 0.5185 & 0.5227 \\
+    Methyl Acetate -- Ethyl Acetate  & 0.1790 & 0.0030 & 0.1790 & 0.0030 & 0.3136 & 1.9805 \\
+    Ethyl Acetate -- EtOH        & 1.3600 & 0.8109 & 1.3600 & 0.8109 & 0.2800 & 0.9131 \\
+    \bottomrule
+    \end{tabular}
+    \label{tab:model_parameters}
+    \end{table}
+\end{frame}
+
+
+\end{document}
